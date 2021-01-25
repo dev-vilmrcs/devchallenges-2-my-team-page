@@ -107,7 +107,6 @@ footer {
         display: flex;
     }
     .team-description h2 {
-        margin-left: 5rem;
         margin-top: 0;
         align-self: flex-start;
     }
@@ -146,6 +145,9 @@ footer {
 }
 
 @media (min-width: 1200px) {
+    .team-description h2 {
+        margin-left: 5rem;
+    }
     .team-description {
         margin: 0 auto;
     }
