@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.clr {
+    clear: both;
+}
+
+
+/* MAIN */
+
+main {
+    height: 100vh;
+    min-width: 320px;
+}
+
+.container {
+    margin: 2rem 1rem;
+}
+
+.team-description h2 {
+    margin: 2rem 0;
+}
+
+.team-description p {
+    margin-bottom: 0.5rem;
+}
+
+.desc-1 {
+    font-weight: bold;
+}
+
+.desc-2 {
+    width: 90%;
+}
+
+
+/* TEAM CONTAINER */
+
+.team-container {
+    width: 100%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    /* border: 1px solid red; */
+}
+
+.card {
+    position: relative;
+    width: 9rem;
+    height: 13rem;
+    /* border: 1px solid red; */
+}
+
+.card:nth-child(even) {
+    margin-top: 4rem;
+}
+
+.team-image-container {
+    width: 85%;
+}
+
+.team-jobdesc {
+    display: inline;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateZ(90deg) translateX(135px) translateY(11px);
+    transform-origin: right;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.team-description {
+    max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+    .team-description {
+        margin: 0 6rem;
+        display: flex;
+    }
+    .team-description h2 {
+        margin-left: 5rem;
+        margin-top: 0;
+        align-self: flex-start;
+    }
+    .desc-header {
+        width: 50%;
+    }
+    .team-paragraph {
+        /* display: flex; */
+        width: 50%;
+    }
+    .team-container-parent {
+        padding-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .team-container {
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+    .card {
+        position: relative;
+        width: 12rem;
+        height: 16rem;
+    }
+    .card:nth-child(2) {
+        margin-top: 8rem;
+    }
+    .card:nth-child(5) {
+        margin-top: 10rem;
+    }
+    .team-jobdesc {
+        transform: rotateZ(90deg) translateX(180px) translateY(11px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .team-description {
+        margin: 0 auto;
+    }
+    .team-container {
+        max-width: 1200px;
+    }
+    .card {
+        width: 16rem;
+        height: 20rem;
+    }
+    .team-jobdesc {
+        transform: rotateZ(90deg) translateX(245px) translateY(11px);
+    }
+}
