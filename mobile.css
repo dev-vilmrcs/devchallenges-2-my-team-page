@@ -1,0 +1,43 @@
+@media (min-width: 500px) {
+    .team-image-container {
+        width: 90%;
+    }
+    .card p:not([class='team-jobdesc']) {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .team-info {
+        display: flex;
+    }
+
+    .team-header {
+        width: 100%;
+    }
+
+    .team-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card:nth-child(2),
+    .card:nth-child(5) {
+        margin-top: 10rem;
+    }
+    .team-image-container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .team-info {
+        margin-left: 8.1rem ;
+        margin-right: 8.1rem;
+    }
+    .team-container {
+        justify-content: center;
+        grid-template-columns: repeat(3, 25%);
+    } 
+    .team-image-container {
+        width: 70%;
+    }
+}
